@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+<link href="css/home2.css" rel="stylesheet" type="text/css">
+<script src="js/home2.js"></script>
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row {
+  margin-top: 5%;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:darkred;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  float: right;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <div class="dropdown">
+    <div class="topnav">
+        <div class="topnav-right">
+            <img src="images/3 line.png" class="dropbtn" onclick="myFunction()">
+            <span>S.M.O</span>
+        </div>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="list_item.html">ยืมของ</a>
+        <a href="detailActivity.html">กิจกรรม</a>
+        <a href="">จองห้องประชุม</a>
+        <a href="detailMemSmo.html">ติดต่อ</a>
+        <a href="">รายงานปัญหา</a>
+    </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/sithanFest.jpg" alt="sithan" style="width:100%">
+      <div class="container">
+        <h2>สีฐานเฟสติวัล</h2>
+        <p class="title">9-11 พฤษจิกายน 2562</p>
+       
+        <p><button class="button">รายละเอียด&เข้าร่วม</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/katin.jpg" alt="katin" style="width:100%">
+      <div class="container">
+        <h2>งานกฐินพระราชทาน</h2>
+        <p class="title">วันที่ 26-27 ตุลาคม 2562</p>
+       
+        <p><button class="button">รายละเอียด&เข้าร่วม</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/confer.jpg" alt="confer" style="width:100%">
+      <div class="container">
+        <h2>ประชุมรุ่น56</h2>
+        <p class="title">17 ตุลาคม 2562</p>
+        
+        <p><button class="button">รายละเอียด&เข้าร่วม</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="css/home2.css" rel="stylesheet" type="text/css">
+    <script src="js/home2.js"></script>
+    <style>
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+            float: left;
+            margin-top: 50px;
+        }
+        .container img{
+            margin-left: 25%;
+        }
+        .image {
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 45px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <div class="topnav">
+            <div class="topnav-right">
+                <img src="images/3 line.png" class="dropbtn" onclick="myFunction()">
+                <span>S.M.O</span>
+            </div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">HOME</a>
+            <a href="list_item.html">ยืมของ</a>
+            <a href="detailActivity.html">กิจกรรม</a>
+            <a href="">จองห้องประชุม</a>
+            <a href="detailMemSmo.html">ติดต่อ</a>
+            <a href="">รายงานปัญหา</a>
+        </div>
+    </div>
+
+    <h2>รายชื่อคณะกรรมการสโมสร 2019</h2>
+
+    <div class="container">
+        <img src="images/nick.jpg" alt="nick" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายธนาธิป วาลีประโคน <br /> ชื่อเล่น: นิก <br /> ตำแหน่ง: นายกสโมสรนักศึกษา
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 593040086-5 <br />ภาควิชา: ภาคเครื่องกล <br />เบอร์โทรศัพท์:
+                0990691577</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/preiw.jpg" alt="priew" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายชลากร ผาสอน <br /> ชื่อเล่น: เปียว <br /> ตำแหน่ง: อุปนายกนายกสโมสรนักศึกษา
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603030482-8 <br />ภาควิชา: ภาคเคมี <br />เบอร์โทรศัพท์:
+                0901024423</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img src="images/tae.jpg" alt="Tae" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายพงศกร นันตะสุข <br /> ชื่อเล่น: เต้ <br /> ตำแหน่ง: ฝ่ายวัสดุอุปกรณ์
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603040748-6 <br />ภาควิชา: ภาคไฟฟ้า <br />เบอร์โทรศัพท์:
+                0990421252</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/pae.jpg" alt="Tae" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายรุจโอฬาร วงค์ขุนทอง <br /> ชื่อเล่น: เป้ <br /> ตำแหน่ง: ฝ่ายชุมนุม ปีการศึกษา2562
+                <br />รหัสประจำตัวนักศึกษา: 603040924-2 <br />ภาควิชา: ภาคโยธา <br />เบอร์โทรศัพท์: 0824735191</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/on.jpg" alt="on" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นางสาวกนกอร คชพรม <br /> ชื่อเล่น: อร <br /> ตำแหน่ง: ฝ่ายวัสดุและอุปกรณ์
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603040387-2 <br />ภาควิชา: ภาคอุตสาหการ <br />เบอร์โทรศัพท์:
+                0824735191</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/beam.jpg" alt="beam" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นางสาวณัฏฐณิชา ทีคำแก้ว <br /> ชื่อเล่น: ปริม <br /> ตำแหน่ง: ฝ่ายวางแผนงาน
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603040941-8 <br />ภาควิชา: ภาคอุตสาหการ <br />เบอร์โทรศัพท์:
+                0992049692</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/pp.jpg" alt="pp" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายภัคนันท์ เกียรติพรโอภาส <br /> ชื่อเล่น: พีพี <br /> ตำแหน่ง: ฝ่ายวิชาการ
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603040505-2 <br />ภาควิชา: ภาคโยธา <br />เบอร์โทรศัพท์:
+                0968160237</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/pond.jpg" alt="pond" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายศุภศานต์ ไชยคำภา <br /> ชื่อเล่น: ปอนด์ <br /> ตำแหน่ง:ฝ่ายกีฬา
+                ปีการศึกษา2562<br />รหัสประจำตัวนักศึกษา: 603040709-6 <br />ภาควิชา: ภาคเครื่องกล <br />เบอร์โทรศัพท์:
+                0968160237</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/gam.jpg" alt="gam" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นางสาวนคนันทินี เวียงคำ <br /> ชื่อเล่น: แกม <br /> ตำแหน่ง: ฝ่ายประชาสัมพันธ์
+                ปีการศึกษา2562 <br />รหัสประจำตัวนักศึกษา: 603040944-2 <br />ภาควิชา: ภาคโยธา <br />เบอร์โทรศัพท์:
+                0968160237</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/mild.jpg" alt="mild" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นางสาวศศิธร​ ภูผาจง <br /> ชื่อเล่น: มายด์ <br /> ตำแหน่ง: ฝ่ายดาว-เดือน
+                ปีการศึกษา2562 <br />รหัสประจำตัวนักศึกษา: 603040022-2 <br />ภาควิชา: ภาคเครื่องกล <br />เบอร์โทรศัพท์:
+                0967876346</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/wat.jpg" alt="wat" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นายภูมิรพี สุระมุล <br /> ชื่อเล่น: วัท <br /> ตำแหน่ง: ฝ่ายเชียร์ ปีการศึกษา2562
+                <br />รหัสประจำตัวนักศึกษา: 613040534-6 <br />ภาควิชา: ภาคเครื่องกล <br />เบอร์โทรศัพท์: 0613070771</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/frong.jpg" alt="frong" class="image">
+        <div class="overlay">
+            <div class="text">ชื่อ: นางสาวกรวีร์ โกศิลา <br /> ชื่อเล่น: ฟร้องซ์ <br /> ตำแหน่ง: ฝ่ายวัฒนธรรม
+                ปีการศึกษา2562 <br />รหัสประจำตัวนักศึกษา: 603040289-2 <br />ภาควิชา: ภาคคอมพิวเตอร์ <br />เบอร์โทรศัพท์:
+                0921543474</div>
+        </div>
+    </div>
+<script>
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+</script>
+</body>
+
+</html>

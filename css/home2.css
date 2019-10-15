@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: "Sarabun", sans-serif;
+}
+.dropbtn:focus {
+  background-color: maroon;
+}
+.dropbtn {
+  width: 60px;
+  height: 60px;
+  background-color: maroon;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  vertical-align:middle;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.topnav-right span{
+  margin-left: 20px;
+  color:white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: Maroon;
+  font-size: 50px;
+  display: inline;
+  
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+
+.dropdown {
+  background-color: Maroon;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 20%;
+  min-height: 40%;
+}
+.dropdown a:hover {
+  background-color: rgb(177, 177, 177);
+}
+.show {
+  display: block;
+}
+
+

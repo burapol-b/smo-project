@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <style>
+        .table th {
+            text-align: center;
+        }
+    </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+
+  <body>
+    <h1 style="text-align: center;">LEND ITEM</h1>
+    <br />
+
+    <form>
+      <label for="fnameform" style="margin-left: 20%;">First Name</label>
+      <input
+        type="fname"
+        class="form-control"
+        id="fname_field"
+        placeholder="ชื่อ"
+        style="width: 25%; margin-left: 25%;"
+      />
+
+      <label for="lnameform" style="margin-left: 20%;">Last Name</label>
+      <input
+        type="lname"
+        class="form-control"
+        id="lname_field"
+        placeholder="นามสกุล"
+        style="width: 25%; margin-left: 25%;"
+      />
+
+      <label for="stuIDform" style="margin-left: 20%;">Student ID</label>
+      <input
+        type="stu_id"
+        class="form-control"
+        id="stuID_field"
+        placeholder="60304xxxx-x"
+        style="width: 25%; margin-left: 25%;"
+      />
+
+      <label for="telform" style="margin-left: 20%;">TEL Number.</label>
+      <input
+        type="tel_num"
+        class="form-control"
+        id="tel_field"
+        placeholder="123-456-7890"
+        style="width: 25%; margin-left: 25%;"
+      />
+
+      <br />
+      <div class="form-group">
+        <label for="telform" style="margin-left: 20%;">รายการ.</label>
+        <select
+          class="form-control"
+          id="select_button"
+          style="width: 50%; margin-left: 25%;"
+        >
+          <option value="EN132455">EN132455 ลำโพง</option>
+          <option value="EN349902">EN349902 พาน</option>
+          <option value="EN239879">EN239879 ไมโครโฟน</option>
+          <option value="EN654321">EN654321 หมอน</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="form-group" style="margin-left: 25%;">
+        <label >วันที่ยืม_____________วันที่คืน</label><br>
+        <input type="text" id="lendDate_form" placeholder="ยืม dd/mm/yyyy">
+        <input type="text" id="retDate_form" placeholder="คืน dd/mm/yyyy">
+        <input type="number" id="piece_form" placeholder="piece">
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="butt_sub" style="margin-left: 25%; width: 50%;">Submit</button>
+  </body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBB7jImQxNnT6I4XaJPWLxAW48WzGyKjRU",
+      authDomain: "smo-project.firebaseapp.com",
+      databaseURL: "https://smo-project.firebaseio.com",
+      projectId: "smo-project",
+      storageBucket: "smo-project.appspot.com",
+      messagingSenderId: "675738022349",
+      appId: "1:675738022349:web:2efcbd492d9690ac6a9484",
+      measurementId: "G-GCLFZBD149"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+
+  <script src="js/itemLend.js"></script>
+</html>

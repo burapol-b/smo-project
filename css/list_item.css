@@ -1,0 +1,38 @@
+body{
+    font-family: "Sarabun", sans-serif;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    border-width: medium;
+    color: maroon;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 70%;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column img{
+      width: 50%;
+      margin-top: 20%;
+  }
+.column img:hover{
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    -webkit-filter: drop-shadow(0px 0px 30px #222);
+  filter: drop-shadow(0px 0px 30px #222);
+}

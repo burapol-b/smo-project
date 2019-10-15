@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+  <link href="css/home2.css" rel="stylesheet" type="text/css">
+  <script src="js/home2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<style>
+  .table th {
+    text-align: center;
+  }
+
+  body {
+    font-family: "Sarabun", sans-serif;
+    text-decoration: none;
+  }
+
+</style>
+
+<body>
+  <div class="dropdown">
+    <div class="topnav">
+      <div class="topnav-right">
+        <img src="images/3 line.png" class="dropbtn" onclick="myFunction()">
+        <span>S.M.O</span>
+      </div>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">HOME</a>
+      <a href="list_item.html">ยืมของ</a>
+      <a href="detailActivity.html">กิจกรรม</a>
+      <a href="">จองห้องประชุม</a>
+      <a href="detailMemSmo.html">ติดต่อ</a>
+      <a href="">รายงานปัญหา</a>
+    </div>
+  </div>
+  <h1 style="text-align: center;">Return ITEM (Admin only)</h1>
+  <br />
+
+  <br /><br />
+  <table class="table table-bordered" id="tbresult">
+    <tr>
+      <th style="width: 20%;">รายการ</th>
+      <th style="width: 5%;">จำนวน</th>
+      <th style="width: 10%;">Student ID</th>
+      <th style="width: 15%;">ชื่อ นามสกุล</th>
+      <th style="width: 15%;">Tel.</th>
+      <th style="width: 15%;">ยืม</th>
+      <th style="width: 15%;">คืน</th>
+      <th style="width: 10%;">ดำเนินการ</th>
+    </tr>
+  </table>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBB7jImQxNnT6I4XaJPWLxAW48WzGyKjRU",
+    authDomain: "smo-project.firebaseapp.com",
+    databaseURL: "https://smo-project.firebaseio.com",
+    projectId: "smo-project",
+    storageBucket: "smo-project.appspot.com",
+    messagingSenderId: "675738022349",
+    appId: "1:675738022349:web:2efcbd492d9690ac6a9484",
+    measurementId: "G-GCLFZBD149"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+
+<script src="js/adminLendSMO.js"></script>
+
+</html>

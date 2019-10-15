@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id"
+        content="438871801271-99tlmu81uhqf767sdrcenuktjs22tgbq.apps.googleusercontent.com">
+    <title>S.M.O</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="topnav-right">
+            <a href="index.html">HOME</a>
+            <a href="list_item.html">ยืมของ</a>
+            <a href="detailActivity.html">กิจกรรม</a>
+            <a href="">จองห้องประชุม</a>
+            <a href="detailMemSmo.html">ติดต่อ</a>
+            <a href="">รายงานปัญหา</a>
+            <a href="#popup1"><button class="hover" on>LOG IN</button></a>
+
+        </div>
+    </div>
+    <div id="home" class="home">
+        <h1>S.M.O</h1>
+        <h2>We are Entaneer</h2><br><br><br><br>
+    </div>
+
+    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/sithanFest.jpg" style="width:100%;" >
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/confer.jpg" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/katin.jpg" style="width:100%">
+              
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">×</a>
+            <div class="content">
+                <div id="popupbox">
+                    <form name="login" action="" method="post" class="loginMargin">
+                        Email:<br>
+                        <input type="text" name="username"><br>
+                        Password:<br>
+                        <input type="text" name="password" type="password"><br>
+                        <a class="g-signin2" data-onsuccess="onSignIn"></a>
+                        <a href="#" onclick="signOut();">Sign out</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://apis.google.com/js/platform.js" async defer> /** sign in **/</script>
+
+<script> /** sign out **/
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+        });
+    }
+</script>
+
+</html>
