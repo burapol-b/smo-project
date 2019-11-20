@@ -1,3 +1,4 @@
+import { fromDebug } from "bytebuffer";
 
 function compare() {
   var sub_butt = document.getElementById("butt_sub");
@@ -47,4 +48,9 @@ function compare() {
 
   });
 
+}
+
+function alert() {
+  alert("ทำรายการสำเร็จ");
+  location.reload();
 }
