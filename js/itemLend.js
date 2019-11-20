@@ -1,6 +1,7 @@
 import { fromDebug } from "bytebuffer";
 
 function compare() {
+  alert();
   var sub_butt = document.getElementById("butt_sub");
   sub_butt.addEventListener("click", e => {
     var f_name = document.getElementById("fname_field").value;
@@ -48,9 +49,12 @@ function compare() {
 
   });
 
+  function alert() {
+    alert("ทำรายการสำเร็จ");
+    location.reload();
+  }
+
+
+
 }
 
-function alert() {
-  alert("ทำรายการสำเร็จ");
-  location.reload();
-}
