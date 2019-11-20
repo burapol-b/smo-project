@@ -1,4 +1,3 @@
-import { fromDebug } from "bytebuffer";
 
 function compare() {
   alert();
