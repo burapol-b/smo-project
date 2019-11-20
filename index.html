@@ -63,25 +63,6 @@
             </div>
             
 
-
-    <div id="popup1" class="overlay">
-        <div class="popup">
-            <a class="close" href="#">×</a>
-            <div class="content">
-                <div id="popupbox">
-                    <form name="login" action="" method="post" class="loginMargin">
-                        Email:<br>
-                        <input type="text" name="username"><br>
-                        Password:<br>
-                        <input type="text" name="password" type="password"><br>
-                        <a class="g-signin2" data-onsuccess="onSignIn"></a>
-                        <a href="#" onclick="signOut();">Sign out</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id=”fb-root”></div>
     <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -97,14 +78,6 @@
 
 <script src="https://apis.google.com/js/platform.js" async defer> /** sign in **/</script>
 
-<script> /** sign out **/
-    function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-            console.log('User signed out.');
-        });
-    }
-</script>
 <script>
         window.fbAsyncInit = function () {
             FB.init({
