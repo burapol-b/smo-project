@@ -51,7 +51,7 @@ function compare() {
 
   function alert() {
     alert("ทำรายการสำเร็จ");
-    location.reload();
+    window.location.href="../index.html";
   }
 
 
