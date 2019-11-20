@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <title>Activity</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <style>
+        span {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function getWelcome() {
+            baseURL = "https://burapol.github.io/smo-project/json/contentSMO.json";
+            $.getJSON(baseURL, function (json) {
+                for (i = 0; i < json.results.length; i++) {
+                var order = i + 1;
+                document.getElementById("tablee").innerHTML +=
+                    "<tr><td>" +
+                    order +
+                    ".</td><td><span>" +
+                    '<img src="' + json.results[i].imgURL + '">' + 
+                    "</span></td><td>" +
+                    "<a href='" + json.results[i].url + "'>" + json.results[i].title + "</a><br/>" +
+                    "<span>" + json.results[i].description + "</span>"
+                    "</td></tr>";
+                }
+            });
+        }
+    </script>
+</head>
+
+<body onload="getWelcome()">
+    <h1>ภาพกิจกรรม</h1>
+    <div id="welcome">
+        <table id="tablee">
+            <tr id="head">
+                <td></td>
+                <td>Title</td>
+                <td>Latitude</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
