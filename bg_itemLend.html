@@ -278,10 +278,9 @@
           var i;
           if (i = 1) {
             btn.setAttribute('id','butt_sub');
-            btn.setAttribute('onclick',compare());
+            btn.addEventListener('click', compare);
             btn.setAttribute('data-toggle','modal');
             btn.setAttribute('data-toggle','#myModal');
-  
           }
           i++;
 
