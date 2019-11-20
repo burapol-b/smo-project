@@ -21,7 +21,8 @@
             <a href="">จองห้องประชุม</a>
             <a href="detailMemSmo.html">ติดต่อ</a>
             <a href="">รายงานปัญหา</a>
-            <div class="fb-messengermessageus" messenger_app_id="413781806171719" page_id="104553457682958" color="blue" size="standard"></div>
+            <!--<div class="fb-messengermessageus" messenger_app_id="413781806171719" page_id="104553457682958" color="blue"
+                size="standard"></div>-->
 
         </div>
     </div>
@@ -29,6 +30,16 @@
         <h1>S.M.O</h1>
         <h2>We are Entaneer</h2><br><br><br><br>
     </div>
+
+    <div id=”fb-root”></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook - jssdk'));</script>
+    <div class='fb-customerchat' attribution='setup_tool' page_id='104553457682958' theme_color='#0084ff'></div>
 
     <div class="slideshow-container">
 
@@ -69,6 +80,28 @@
     window.fbAsyncInit = function () {
         FB.init({
             appId: '413781806171719',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v3.0'
+        });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook - jssdk'));
+
+</script>
+
+
+
+<!--
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '413781806171719',
             xfbml: true,
             version: 'v2.8'
         });
@@ -83,5 +116,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+-->
 
 </html>
