@@ -48,13 +48,5 @@ function compare() {
     }
 
   });
-
-  function alert() {
-    alert("ทำรายการสำเร็จ");
-    window.location.href="../index.html";
-  }
-
-
-
 }
 
