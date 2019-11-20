@@ -55,7 +55,7 @@
       }
 
       body {
-        background-color: #f1f1f1;
+        background-color:white;
         
       }
 
@@ -71,6 +71,7 @@
       h1 {
         text-align: center;
         font-family: "Sarabun", sans-serif;
+        color: darkred;
       }
 
       input {
@@ -78,7 +79,7 @@
         width: 100%;
         font-size: 17px;
         font-family: Raleway;
-        border: 1px solid #aaaaaa;
+        border: 1px solid #b97979;
       }
 
       /* Mark input boxes that gets an error on validation: */
@@ -95,7 +96,7 @@
         margin: 10px;
       }
       button {
-        background-color: #4caf50;
+        background-color: darkred;
         color: #ffffff;
         border: none;
         padding: 10px 20px;
@@ -130,7 +131,7 @@
 
       /* Mark the steps that are finished and valid: */
       .step.finish {
-        background-color: #4caf50;
+        background-color: darkred;
       }
     </style>
   </head>
@@ -206,8 +207,9 @@
           <select class="form-control" id="select_button">
             <option value="EN132455">EN132455 ลำโพง</option>
             <option value="EN349902">EN349902 พาน</option>
-            <option value="EN239879">EN239879 ไมโครโฟน</option>
-            <option value="EN654321">EN654321 หมอน</option>
+            <option value="EN239879">EN239879 ไมโครโฟน/option>
+            <option value="EN654321">EN654321 หมอน/option>
+            
           </select>
         </p>
         <p>
@@ -278,7 +280,8 @@
             btn.setAttribute('id','butt_sub');
             btn.setAttribute('onclick',compare());
             btn.setAttribute('data-toggle','modal');
-            btn.setAttribute('data-toggle','#myModal')
+            btn.setAttribute('data-toggle','#myModal');
+  
           }
           i++;
 
